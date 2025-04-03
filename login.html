@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <style>
+        body{
+            background-color: rgb(202, 230, 202);
+            background-image: url(hojas.png);
+            background-size: 650px;
+            background-position: 60cm;
+            backdrop-filter: 8px;
+        }
+        div{
+            background-color: rgb(52, 126, 62, 0.8);
+            margin-left: 400px;
+            margin-bottom: 0px;
+            margin-right: 400px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border:3px rgb(13, 73, 21) solid;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgb(13, 73, 21);
+            height: 530px;
+            width: 450px;
+            text-align: center;
+            font-size: 23px;
+        }
+        input, select{
+            border: 2px rgb(13, 73, 21) solid;
+            border-radius: 8px;
+            background-color: rgb(115, 194, 126, 0,8);
+            padding: 10px 20px;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: rgb(113, 117, 113);
+        }
+        select{
+            width: 270px;
+        }
+        input:focus, select:focus{
+            transform: scale(1.05);
+            border-color: rgb(6, 53, 12);
+            box-shadow: 0, 0, 8px rgb(13, 73, 21);
+        }
+        form{
+            margin-top: 35px;
+        }
+        .buttomentrar{
+            background-color: rgb(52, 126, 62, 0.8);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 3px rgb(13, 73, 21) solid;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgb(13, 73, 21);
+            margin-left: 400px;
+            margin-right: 400px;
+            margin-bottom: 400px;
+            padding: 10px 20px;
+            width: 460px;
+            transition: all 0.3s ease;
+            font-size: 20px;
+        }
+        .buttomentrar:hover{
+            transform: scale(1.05);
+            border-color: rgb(6, 53, 12);
+            box-shadow: 0, 0, 8px rgb(13, 73, 21);
+        }
+        p{
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: all 0.3s ease;
+        }
+        p:hover{
+            color: rgb(13, 73, 21);
+
+        }
+        a, a:visited, a:link, a:hover, a:active{
+            text-decoration: none;
+            color: inherit;
+        }
+        h1{
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin-top: 200px;
+            font-size: 36px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+            border: 3px rgb(13, 73, 21) solid;
+            border-radius: 5px;
+            width: 350px;
+            margin-left: 450px;
+            background-color: rgb(52, 126, 62, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <h1>Inicio de sesión</h1>
+    <div>
+       <form action="">
+        <label for="tiusuario">Tipo de usuario</label><br>
+        <select name="tiusuario" id="tiusuario">
+            <option value="Administrador">Administrador</option>
+            <option value="Operario">Operario</option>
+            <option value="Cliente">Cliente</option>
+        </select>
+       </form><br>
+       <form action="">
+        <label for="user">Usuario</label><br>
+        <input type="text" name="user" id="user">
+       </form><br>
+       <form action="">
+        <label for="contra">Contraseña</label><br>
+        <input type="password" name="contra" id="contra">
+       </form>
+       <a href="olvidocontraseña.html"><p>Olvidé mi contraseña</p></a>
+       <p>Registrate</p>
+    </div><br>
+    <button class="buttomentrar" type="submit">Ingresar</button>
+</body>
+</html>
