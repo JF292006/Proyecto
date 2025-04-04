@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Tienda Naturista</title>
+    <link rel="stylesheet" href="estilosadmin.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Tienda Naturista" class="logo">
+            <h1>Panel de Administración</h1>
+        </div>
+        <div class="user-info">
+            <span class="admin-name">Admin Juan Barreto</span>
+            <button class="logout-btn" onclick="window.location.href='index.html'" >Cerrar Sesión</button>
+        </div>
+    </header>
+
+    <main class="admin-dashboard">
+        <div class="dashboard-grid">
+            <div class="dashboard-module ventas">
+                <div class="module-icon">📊</div>
+                <h2>Gestionar Ventas</h2>
+                <p>Administra y visualiza tus ventas diarias, semanales y mensuales</p>
+                <a href="#" class="module-link">Ir a Ventas</a>
+            </div>
+
+            <div class="dashboard-module usuarios">
+                <div class="module-icon">👥</div>
+                <h2>Gestionar Usuarios</h2>
+                <p>Administra perfiles de usuarios, roles y permisos</p>
+                <a href="#" class="module-link">Ir a Usuarios</a>
+            </div>
+
+            <div class="dashboard-module envios">
+                <div class="module-icon">🚚</div>
+                <h2>Gestionar Envíos</h2>
+                <p>Controla y rastrea los envíos de tus productos</p>
+                <a href="#" class="module-link">Ir a Envíos</a>
+            </div>
+
+            <div class="dashboard-module inventario">
+                <div class="module-icon">📦</div>
+                <h2>Gestionar Inventario</h2>
+                <p>Mantén un control preciso de tus productos y existencias</p>
+                <a href="#" class="module-link">Ir a Inventario</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Panel Administrativo</h3>
+                <p></p>
+            </div>
+            <div class="system-info">
+                <p>© 2024 Tienda Naturista - Sistema de Administración</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
